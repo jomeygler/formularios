@@ -49,7 +49,7 @@ Route::get('/{id}/residuos', [DecResiduosController::class, 'registrada'])->name
 Route::get('/{id}/recepcion', [RecepcionController::class, 'registrada'])->name('recepcion');
 Route::get('/{id}/ingresodoc', [IngresoDocController::class, 'registrada'])->name('ingresodoc');
 Route::get('/{id}/partes', [ParteController::class, 'registrada'])->name('partes');
-Route::get('/{id}/patentes', [PatenteController::class, 'registrada'])->name('patentes');
+Route::get('/{id}/patentes', [PatenteController::class, 'registrada'])->name('patentesregistradas');
 Route::get('/{id}/inversiones', [InversionController::class, 'registrada'])->name('inversiones');
 Route::get('/{id}/termino', [TerminoController::class, 'registrada'])->name('termino');
 Route::get('/{id}/sucursales', [SucursalController::class, 'registrada'])->name('sucursales');

@@ -3,7 +3,7 @@
 
 <div class="row mt-4 mb-4  justify-content-center">
   <div class="col-md-10">
-    <h3 class="float-left"><i class="	fas fa-car"></i> Partes </h3>
+    <h3 class="float-left"><i class="	fas fa-car"></i> SOLICITUD DE PATENTE MUNICIPAL </h3>
   </div>
 </div>
 
@@ -160,7 +160,7 @@
         <div class="row">
         
          <div class="col-md-12">
-              <label>Rut</label>
+              <label>RUT</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -170,7 +170,7 @@
             </div>		
             
             <div class="col-md-12">
-              <label>Nombres</label>
+              <label>Nombre o Razón Social</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -180,7 +180,7 @@
             </div>
 
             <div class="col-md-12">
-              <label>Dirección</label>
+              <label>Domicilio particular</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -190,7 +190,7 @@
             </div>                   
         
             <div class="col-md-12">
-              <label>Telefono</label>
+              <label>Teléfono Red Fija</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -227,7 +227,7 @@
         <div class="row">
 
         <div class="col-md-12">
-              <label>Giro</label>
+              <label>GIRO(S) <span>Indicar si corresponde a una fábrica, elaboración o venta.</span></label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -237,7 +237,7 @@
             </div>
 
             <div class="col-md-12">
-              <label>Capital</label>
+              <label>CAPITAL DE INICIO <span>(El que declara en el SII)</span></label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -247,26 +247,25 @@
             </div>
 
             <div class="col-md-12">
-              <label>Avaluo</label>
+              <label> <span>Domicilio Comercial, debe indicar: población, numero de local,condominio, departamento, etc.</span></label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
                 </div>
-                <textarea type="text" class="form-control" id="avaluo"  name="avaluo"   value="{{ old('avaluo') }}" ></textarea>
+                <textarea type="text" class="form-control" id="dir_comercial"  name="dir_comercial"   value="{{ old('dir_comercial') }}" ></textarea>
               </div>
             </div>
 
             <div class="col-md-12">
-              <label>Rol SII</label>
+              <label>Rol Avalúo SII</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
                 </div>
-                <input type="text" class="form-control" id="rolsii"  name="rolsii" maxlength="200"  value="{{ old('rolsii') }}" >
+                <input type="text" class="form-control" id="avaluo"  name="avaluo"  maxlength="200"  value="{{ old('avaluo') }}" >
               </div>
-            </div>             
-
-
+            </div>
+            
         </div>
         </div>
 
@@ -276,7 +275,7 @@
         <div class="row">
         
          <div class="col-md-12">
-              <label>Rut</label>
+              <label>RUT</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -286,7 +285,7 @@
             </div>		
             
             <div class="col-md-12">
-              <label>Nombres</label>
+              <label>Nombre</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -296,7 +295,7 @@
             </div>
 
             <div class="col-md-12">
-              <label>Dirección</label>
+              <label>Domicilio Particular</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -306,7 +305,7 @@
             </div>                   
         
             <div class="col-md-12">
-              <label>Telefono</label>
+              <label>Teléfono Red Fija</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -339,45 +338,58 @@
          </div>
 
          <div class="card-body">
-         <h5>G) PROPAGANDA</h5>
+         <h5>G) PROPAGANDA</h5>       
          <div class="row">
-
          <div class="col-md-12">
          <div class="form-check">
            <input class="form-check-input" type="checkbox" name = "propaganda" value="1" id="1">
            <label class="form-check-label" for="propaganda">
-           <b> Propaganda </b>
+           <b> SI</b>
           </label>
           </div>
           </div>
 
           <div class="col-md-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name = "luminoso_aviso" value="1" id="1">
-            <label class="form-check-label" for="luminoso_aviso">
-           <b> Aviso iluminado  </b>
+         <div class="form-check">
+           <input class="form-check-input" type="checkbox" name = "propagandano" value="1" id="1">
+           <label class="form-check-label" for="propagandano">
+           <b>NO</b>
           </label>
           </div>
           </div>
 
-          <div class="col-md-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name = "noluminoso_aviso" value="1" id="1">
-            <label class="form-check-label" for="noluminoso_aviso">
-           <b> Aviso no iluminado  </b>
-          </label>
-          </div>
-          </div>
+         <div class="col-md-12">
+              <label>Aviso luminoso (Excluido neón) DIMENSIONES EN Mtrs 2</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
+                </div>
+                <input type="text" class="form-control" id="luminoso_aviso"  name="luminoso_aviso" maxlength="200"  value="{{ old('luminoso_aviso') }}" >
+              </div>
+            </div>             
 
-          <div class="col-md-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name = "neon_aviso" value="1" id="1">
-            <label class="form-check-label" for="neon_aviso">
-           <b> Aviso con neón   </b>
-          </label>
-          </div>
-          </div>
+            <div class="col-md-12">
+              <label>Aviso con neón DIMENSIONES EN Mtrs 2</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
+                </div>
+                <input type="text" class="form-control" id="neon_aviso"  name="neon_aviso" maxlength="200"  value="{{ old('neon_aviso') }}" >
+              </div>
+            </div>             
 
+            <div class="col-md-12">
+              <label>Aviso no iluminado DIMENSIONES EN Mtrs 2</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
+                </div>
+                <input type="text" class="form-control" id="noluminoso_aviso"  name="noluminoso_aviso" maxlength="200"  value="{{ old('noluminoso_aviso') }}" >
+              </div>
+            </div>
+
+
+          
           <div class="col-md-12">
               <label>Ubicacion</label>
               <div class="input-group mb-2">
@@ -406,9 +418,8 @@
 </div>
 </form>
       
-
-      
 <script>
+
   $(".control-rut").bind('keypress', function(event) {
 	  var regex = new RegExp("^[0-9 Kk]+$");
 	  var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);

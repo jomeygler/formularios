@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Tramite;
 use App\Models\Patente;
+use Illuminate\Support\Facades\DB;
 
 class PatenteController extends Controller
 {
@@ -88,8 +89,10 @@ class PatenteController extends Controller
          $Patente-> noluminoso_aviso = $request->get('noluminoso_aviso');
          $Patente-> neon_aviso = $request->get('neon_aviso');
          $Patente-> ubicacion = $request->get('ubicacion');
+         $Patente-> dir_comercial = $request->get('dir_comercial');        
          $Patente-> save();
-         //return var_dump($Patente);
+         //return DD($Patente);
+         //return redirect('/{id}/patentes')->route('patentesregistradas')->with('registrada');
          return view ('patentes.show', compact('Patente'));
         //
     }
@@ -97,7 +100,7 @@ class PatenteController extends Controller
     public function registrada($id, Patente $Patente){
         $Patente = Patente::find($id);
         return view('patentes.show', ['Patente'=>Patente::join('tramites', 'tramites.id', '=', 'patentes.tramite')
-        ->select('patentes.*', 'tramites.nombre as nombretramite')->find($id)]);
+        ->select('patentes.*', 'tramites.nombre as nombretramite')]);
         //
     }
 

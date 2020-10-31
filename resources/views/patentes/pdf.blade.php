@@ -155,13 +155,33 @@ municipales)</h5>
       <h5>G) PROPAGANDA</h5>
       <div class="row">
 
-      <div class="col-md-9 rounded border border-dark">
+      <div class="col-md-12 rounded border border-dark">
          <table>
           <tbody>
-            <tr> <td><b>Traslado de Patente: </b></td><td><p>@if(!empty ($Patente->propaganda)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
-            <tr> <td><b>Apertura de Sucursal con Casa Matriz en Villa Alemana: </b></td><td><p>@if(!empty ($Patente->luminoso_aviso)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
-            <tr> <td><b>Cambio de Razón SocialTraslado de Patente: </b></td><td><p>@if(!empty ($Patente->noluminoso_aviso)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
-            <tr> <td><b>Transferencia de Patente: </b></td><td><p>@if(!empty ($Patente->neon_aviso)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
+            <tr> <td><b>PROPAGANDA </b></td><td><p>@if(!empty ($Patente->propaganda)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
+            
+          </tbody>
+         </table>
+         <table>
+           <tbody>         
+            <tr>
+              <td>
+                <label><b>Aviso luminoso (Excluido neón) DIMENSIONES EN Mtrs 2</b></label>
+                <p>{{$Patente->luminoso_aviso}}</p>
+              </td>
+            </tr>  
+            <tr>  
+              <td>
+                <label><b>Aviso con neón DIMENSIONES EN Mtrs 2</b></label>
+                <p>{{$Patente->neon_aviso}}</p>
+              </td>
+            </tr> 
+            <tr>
+              <td>
+                <label><b>Aviso no iluminado DIMENSIONES EN Mtrs 2</b></label>
+                <p>{{$Patente->noluminoso_aviso}}</p>
+              </td>
+            </tr>
           </tbody>
         </table>  
      </div>
@@ -189,6 +209,7 @@ municipales)</h5>
 <br>
 <br>
 <br>
+<p style="text-align: center;">_____________________________</p>
 <h5 style="text-align: center;">NOMBRE Y FIRMA CONTRIBUYENTE</h5>
 </div>
 <br>
