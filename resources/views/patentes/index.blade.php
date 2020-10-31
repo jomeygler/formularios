@@ -15,7 +15,7 @@
            </thead>
               @foreach($Patente as $inv)
                   <tr>
-                      <td><a href="/{{ $inv->id }}/patentes">{{ $inv->id }}</a></td>
+                      <td><a href="{{ route('patentes.registrada', $inv->id) }}">{{ $inv->id }}</a></td>
                       <td> <a class="btn btn-primary" href="/patentes/{{$inv->id}}/edit">Editar</a></td>
                         <td> <a class="btn btn-primary" href="/patentes/{{$inv->id}}/ConfirmaD">eliminar</a></td>
                   </tr>

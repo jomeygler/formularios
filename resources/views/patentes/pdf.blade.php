@@ -19,7 +19,6 @@
 
 <div class="col-md-9 rounded border border-dark Subraya">
              <label><b>Tramite que Realiza</b></label>
-              <p>{{$Patente->tramite}}</p>
               <p>{{$Patente->nombretramite}}</p>
             </div>
          

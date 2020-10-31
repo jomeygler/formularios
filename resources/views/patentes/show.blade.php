@@ -14,7 +14,7 @@
 
 <div class="col-md-9 rounded border border-dark">
              <label><b>Tramite que Realiza</b></label>
-              <p>{{$Patente->tramite}}</p>
+              
               <p>{{$Patente->nombretramite}}</p>
             </div>
          
@@ -155,14 +155,23 @@ municipales)</h5>
          <thead>
         </thead>
           <tbody>
-            <tr> <td><b>Traslado de Patente: </b></td><td><p>@if(!empty ($Patente->propaganda)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
-            <tr> <td><b>Apertura de Sucursal con Casa Matriz en Villa Alemana: </b></td><td><p>@if(!empty ($Patente->luminoso_aviso)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
-            <tr> <td><b>Cambio de Razón SocialTraslado de Patente: </b></td><td><p>@if(!empty ($Patente->noluminoso_aviso)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
-            <tr> <td><b>Transferencia de Patente: </b></td><td><p>@if(!empty ($Patente->neon_aviso)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
- 
+            <tr> <td><b>PROPAGANDA </b></td><td><p>@if(!empty ($Patente->propaganda)  )<p> SI  </p> @else <p>NO</p> @endif</p></td></tr>
+            
           </tbody>
         </table>  
      </div>
+         <div class="col-md-7 rounded border border-dark">
+                <label><b>Aviso luminoso (Excluido neón) DIMENSIONES EN Mtrs 2</b></label>
+                <p>{{$Patente->luminoso_aviso}}</p>
+         </div>
+         <div class="col-md-7 rounded border border-dark">
+                <label><b>Aviso con neón DIMENSIONES EN Mtrs 2</b></label>
+                <p>{{$Patente->neon_aviso}}</p>
+         </div>
+         <div class="col-md-7 rounded border border-dark">
+                <label><b>Aviso no iluminado DIMENSIONES EN Mtrs 2</b></label>
+                <p>{{$Patente->noluminoso_aviso}}</p>
+         </div>
          
       </div>
       </div>

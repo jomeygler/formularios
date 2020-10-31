@@ -92,15 +92,15 @@ class PatenteController extends Controller
          $Patente-> dir_comercial = $request->get('dir_comercial');        
          $Patente-> save();
          //return DD($Patente);
-         //return redirect('/{id}/patentes')->route('patentesregistradas')->with('registrada');
-         return view ('patentes.show', compact('Patente'));
+         return redirect()->route('patentes.registrada', $Patente->id);//->with('registrada');
+         //return view ('patentes.show', compact('Patente'));
         //
     }
 
     public function registrada($id, Patente $Patente){
         $Patente = Patente::find($id);
         return view('patentes.show', ['Patente'=>Patente::join('tramites', 'tramites.id', '=', 'patentes.tramite')
-        ->select('patentes.*', 'tramites.nombre as nombretramite')]);
+        ->select('patentes.*', 'tramites.nombre as nombretramite')->find($id)]);
         //
     }
 
