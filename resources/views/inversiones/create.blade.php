@@ -43,7 +43,7 @@
          <div class="row">
 
             <div class="col-md-12">
-              <label>Rut</label>
+              <label>RUT</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -53,7 +53,7 @@
             </div>		
             
             <div class="col-md-12">
-              <label>Nombres</label>
+              <label>Razón Social</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -63,7 +63,7 @@
             </div>		
 
             <div class="col-md-12">
-              <label>Rol Patente</label>
+              <label>Rol de Patente</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -83,7 +83,7 @@
             </div>          
            
             <div class="col-md-12">
-              <label>Telefono</label>
+              <label>Teléfono/Celular</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -103,7 +103,7 @@
             </div>	
 
             <div class="col-md-12">
-              <label>Rut Representante Legal</label>
+              <label>C.I. representante legal</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -113,7 +113,7 @@
             </div>	
 
             <div class="col-md-12">
-              <label>Representante Legal</label>
+              <label>Nombre representante legal</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -124,7 +124,7 @@
 
 
             <div class="col-md-12">
-              <label>Monto de la Inversion</label>
+              <label>Monto de la inversión: $</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -151,7 +151,7 @@
             </div>		
             
             <div class="col-md-12">
-              <label>Nombres</label>
+              <label>Razón Social</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -161,7 +161,7 @@
             </div>		
 
             <div class="col-md-12">
-              <label>Rol Patente</label>
+              <label>Rol de Patente</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>

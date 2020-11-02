@@ -85,9 +85,16 @@ Alcaldicio N° 395 de 21/02/2020)</h5>
 
 </div>
 </div>
-
-
-
+<div>
+<p> Debera adjuntar a la presente solicitud:</p>
+<p>a) Cédula de identidad.</p>
+<p>b) Inicio de actividades, donde indique segmento tributario al que pertenezca (Micro, pequeña o
+mediana empresa).</p>
+<p>c) Declaración de Renta año 2019 (FORM 22).</p>
+<p>d) Poder notarial vigente en caso de realizar trámite por un tercero.
+Enviar a correo electrónico: aolmos@villalemana.cl - leonardo.meza@villalemana.cl
+snogales@villalemana.cl</p>
+</div>
 
 @if (session('status'))
 <div class = "alert alert-success">
@@ -96,7 +103,8 @@ Alcaldicio N° 395 de 21/02/2020)</h5>
 @endif
 
 <a href="/" class = "btn btn-prymary">Volver</a>
-<a href="{{route('ley.pdf', $Ley->id }}" target="_blank" class="btn btn-success">
+
+<a href="{{route('ley.pdf', $Ley->id) }}" target="_blank" class="btn btn-success">
             Descargar PDF
         </a>
 </div>

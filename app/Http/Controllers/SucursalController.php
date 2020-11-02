@@ -49,7 +49,7 @@ class SucursalController extends Controller
             'giro' => 'required',
             'direccion' => 'required',
             'rol' => 'required',
-            'rep_telefono' => 'required',
+            'Rep_telefono' => 'required',
             //'email' => 'required|email',    
         ]);
         $Sucursale = new Sucursale();
@@ -62,7 +62,7 @@ class SucursalController extends Controller
         $Sucursale-> giro = $request->get('giro');
         $Sucursale-> representante = $request->get('representante');
         $Sucursale-> rutrepresentante = $request->get('rutrepresentante');
-        $Sucursale-> rep_telefono = $request->get('rep_telefono');
+        $Sucursale-> rep_telefono = $request->get('Rep_telefono');
         $Sucursale-> comuna1 = $request->get('comuna1');
         $Sucursale-> comuna2 = $request->get('comuna2');
         $Sucursale-> comuna3 = $request->get('comuna3');
@@ -79,7 +79,8 @@ class SucursalController extends Controller
         $Sucursale-> trabajadores4 = $request->get('trabajadores4');
         $Sucursale-> trabajadores5 = $request->get('trabajadores5');
         $Sucursale->save();
-        return view('sucursales.show', compact('Sucursale'));
+        
+        return redirect()->route('sucursales.registrada', $Sucursale->id);
         //return redirect('vista');
         //
     }

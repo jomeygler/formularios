@@ -3,7 +3,7 @@
 
 <div class="row mt-4 mb-4  justify-content-center">
   <div class="col-md-10">
-    <h3 class="float-left"><i class="	fas fa-car"></i> SOLICITUD TÉRMINO DE NEGOCIO </h3>
+    <h3 class="float-left"><i class="fas fa-ban"></i> SOLICITUD TÉRMINO DE NEGOCIO </h3>
   </div>
 </div>
 
@@ -31,11 +31,11 @@
    </div>
  
          <div class="card-body">
-         <h5>EMPRESA INVERSORA SOLICITANTE DEL CERTIFICADO</h5>
+         <h5>I) INDIVIDUALIZACIÓN DEL CONTRIBUYENTE</h5>
          <div class="row">
 
             <div class="col-md-12">
-              <label>Rut</label>
+              <label>R.U.T. (Razón Social)</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -45,7 +45,7 @@
             </div>		
             
             <div class="col-md-12">
-              <label>Nombres</label>
+              <label>Razón Social</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -75,7 +75,7 @@
             </div>          
            
             <div class="col-md-12">
-              <label>Telefono</label>
+              <label>Telefono Particular</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -105,7 +105,7 @@
             </div>	
 
             <div class="col-md-12">
-              <label>Razones</label>
+              <label>Razones por las cuales solicita el término de negocio:</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -132,7 +132,7 @@
             </div>		
             
             <div class="col-md-12">
-              <label>Nombres</label>
+              <label>Nombre representante legal</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -142,7 +142,7 @@
             </div>		
             
             <div class="col-md-12">
-              <label>Dirección</label>
+              <label>Domicilio</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -152,7 +152,7 @@
             </div>
 
             <div class="col-md-12">
-              <label>Telefono</label>
+              <label>Telefono Particular</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>

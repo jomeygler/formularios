@@ -47,6 +47,13 @@ class InversionController extends Controller
             'rutrepresentante' => 'required',
             'rec_rut' => 'required',
             'rec_nombre' => 'required',
+            'representante' => 'required',
+            'rol' => 'required',
+            'montoinv' => 'required',
+            'rec_rut' => 'required',
+            'rec_nombre' => 'required',
+            'rec_direccion' => 'required',
+            'rec_rol' => 'required',
             //'email' => 'required|email',    
         ]);
         $Inversione = new Inversione();
@@ -64,13 +71,13 @@ class InversionController extends Controller
        $Inversione-> rec_direccion =$request->get('rec_direccion');
        $Inversione-> rec_rol = $request->get('rec_rol');
        $Inversione-> save();
-       return view('inversiones.show', compact('Inversione'));
+       return redirect()->route('inversiones.registrada', $Inversione->id);
        
         //
     }
 
 
-    public function registra($id, Inversione $Inversione ){
+    public function registrada($id, Inversione $Inversione ){
         $Inversione = Inversione::find($id);
         return view('inversiones.show', compact('Inversione'));
 

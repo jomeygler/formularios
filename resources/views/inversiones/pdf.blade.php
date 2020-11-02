@@ -9,8 +9,8 @@
 </div>
 
 
-<div class="row mt-4 mb-4  justify-content-center">
-<h1>FORMULARIO DE EMISIÓN DE CERTIFICADO DE INVERSIONES</h1>
+<div class="row mt-4 mb-4" style="text-align: center;">
+<h1  style="color:d60b51">FORMULARIO DE EMISIÓN DE CERTIFICADO DE INVERSIONES</h1>
 <span><b>(PARA EFECTOS DE LA DETERMINACIÓN DEL CAPITAL PROPIO AFECTO A PATENTE COMERCIAL)</b></span>
 </div>
 <div>
@@ -96,6 +96,7 @@ N°3.063, extienda certificado que acredite inversiones vigentes.</p>
 
 </div>
 </div>
+<br>
 <div>
 <h3>REQUISITOS INDISPENSABLES</h3>
 <p>DEBE PRESENTAR:<p>
@@ -114,6 +115,16 @@ aplicada.</p>
 PARA LA EMISIÓN DEL CERTIFICADO DE REBAJA SOLICITADO, SON FIDEDIGNOS Y SE
 ENTREGAN BAJO EXCLUSIVA RESPONSABILIDAD DEL SUSCRITO REPRESENTANTE LEGAL.
 </p>
+</div>
+
+<div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="text-align: center;">_____________________________</p>
+<h5 style="text-align: center;">NOMBRE Y FIRMA CONTRIBUYENTE</h5>
 </div>
 @if (session('status'))
 <div class = "alert alert-success">

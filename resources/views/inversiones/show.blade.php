@@ -3,6 +3,7 @@
 
 
 @section('content')
+<div class="container">
 
 <div class="row mt-4 mb-4  justify-content-center">
 <h1>FORMULARIO DE EMISIÓN DE CERTIFICADO DE INVERSIONES</h1>
@@ -51,8 +52,6 @@
             </div>
             </div>
 
-</div>
-</div>
 
 <div class="card-body">
 <h5>EMPRESA RECEPTORA DE LA INVERSIÓN</h5>
@@ -96,6 +95,6 @@
 <a href="{{ route('inversiones.pdf',$Inversione->id) }}" target="_blank" class="btn btn-success">
             Descargar  PDF
         </a>
-
-
+        
+</div>
 @endsection

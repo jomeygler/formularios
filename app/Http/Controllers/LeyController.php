@@ -66,7 +66,8 @@ class LeyController extends Controller
         $Ley-> solicitud1 = $request->get('solicitud1');
         $Ley-> solicitud2 = $request->get('solicitud2');
         $Ley->save();
-        return view ('ley.show', compact('Ley'));
+        return redirect()->route('ley.registrada', $Ley->id);
+        
     }
 
     public function registrada($id, Ley $Ley){

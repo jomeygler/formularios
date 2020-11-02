@@ -47,7 +47,15 @@ class TerminoController extends Controller
             'email' => 'required',
             'rutrepresentante' => 'required',
             'representante' => 'required',
+            'direccion' => 'required',
+            'telefono' => 'required',
+            'celular' => 'required',
+            'razones' => 'required',
             'rol' => 'required',
+            'rep_direcion' => 'required',
+            'rep_telefono' => 'required',
+            'rep_celular' => 'required',
+            'rep_email' => 'required',
             //'email' => 'required|email',    
         ]);
         $Termino = new Termino();
@@ -66,14 +74,14 @@ class TerminoController extends Controller
         $Termino -> rep_telefono = $request->get('rep_telefono');
         $Termino -> rep_email = $request->get('rep_email');
         $Termino -> rep_celular = $request->get('rep_celular');
-        $Termino ->save();
-        return view('termino.show', compact('Termino'));
+        $Termino ->save();        
+       
+         return redirect()->route('termino.registrada', $Termino->id);
         //
     }
 
     public function registrada($id, Termino $Termino){
-
-        $Termino = Termino::all();
+        $Termino = Termino::find($id);
         return view('termino.show', compact('Termino'));
     }
 

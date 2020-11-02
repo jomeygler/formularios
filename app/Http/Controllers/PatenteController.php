@@ -106,10 +106,10 @@ class PatenteController extends Controller
 
     public function pdf($id, Patente $Patente){
         $Patente = Patente::find($id);
-       
-        $pdf = \PDF::loadView('patentes.pdf', compact('Patente'));
+        $Tramite = Tramite::all();
+        $pdf = \PDF::loadView('patentes.pdf', compact('Patente')); 
         return $pdf->stream('patentes.pdf',['Patente'=>Patente::join('tramites', 'tramites.id', '=', 'patentes.tramite')
-        ->select('patentes.*', 'tramites.nombre as nombretramite')]);
+        ->select('patentes.*', 'tramites.nombre as nombretramite')->find($id)]);
     }
 
     /**

@@ -3,7 +3,7 @@
 
 
 @section('content')
-
+<div class="container">
 <div class="row mt-4 mb-4  justify-content-center">
 <h1> SOLICITUD TÉRMINO DE NEGOCIO</h1>
 </div>
@@ -13,12 +13,12 @@
 <div class="row">
 
            <div class="col-md-12 rounded border border-dark">
-             <label><b>Nombre</b></label>
+             <label><b>Razón Social</b></label>
               <p>{{$Termino->nombre}}</p>
             </div>
             
             <div class="col-md-5 rounded border border-dark">
-             <label><b>Rut</b></label>
+             <label><b>R.U.T. (Razón Social)</b></label>
               <p>{{$Termino->rut}}</p>
             </div>            
 
@@ -28,7 +28,7 @@
             </div>
 
             <div class="col-md-9 rounded border border-dark">
-             <label><b>Direccion</b></label>
+             <label><b>Domicilio</b></label>
               <p>{{$Termino->direccion}}</p>
             </div>
 
@@ -41,11 +41,7 @@
              <label><b>email</b></label>
               <p>{{$Termino->email}}</p>
             </div>
-
-                        
-
-            </div>
-            </div>
+          
 
 </div>
 </div>
@@ -57,12 +53,12 @@
 
             <div class="col-md-12 rounded border border-dark">
              <label><b>Nombre</b></label>
-              <p>{{$Termino->nombre}}</p>
+              <p>{{$Termino->representante}}</p>
             </div>
             
             <div class="col-md-5 rounded border border-dark">
              <label><b>Rut</b></label>
-              <p>{{$Termino->rut}}</p>
+              <p>{{$Termino->rutrepresentante}}</p>
             </div>            
 
             <div class="col-md-9 rounded border border-dark">
@@ -94,6 +90,5 @@
 <a href="{{ route('termino.pdf' , $Termino->id )}}" target="_blank" class="btn btn-success">
             Descargar PDF
         </a>
-
-
+</div>
 @endsection

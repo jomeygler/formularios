@@ -50,10 +50,10 @@ Route::get('/{id}/recepcion', [RecepcionController::class, 'registrada'])->name(
 Route::get('/{id}/ingresodoc', [IngresoDocController::class, 'registrada'])->name('ingresodoc');
 Route::get('/{id}/partes', [ParteController::class, 'registrada'])->name('partes');
 Route::get('/{id}/patentes', [PatenteController::class, 'registrada'])->name('patentes.registrada');
-Route::get('/{id}/inversiones', [InversionController::class, 'registrada'])->name('inversiones');
-Route::get('/{id}/termino', [TerminoController::class, 'registrada'])->name('termino');
-Route::get('/{id}/sucursales', [SucursalController::class, 'registrada'])->name('sucursales');
-Route::get('/{id}/ley', [LeyController::class, 'registrada'])->name('ley');
+Route::get('/{id}/inversiones', [InversionController::class, 'registrada'])->name('inversiones.registrada');
+Route::get('/{id}/termino', [TerminoController::class, 'registrada'])->name('termino.registrada');
+Route::get('/{id}/sucursales', [SucursalController::class, 'registrada'])->name('sucursales.registrada');
+Route::get('/{id}/ley', [LeyController::class, 'registrada'])->name('ley.registrada');
 Route::get('/{id}/ingreso', [IngresoController::class, 'registrada'])->name('ingreso');
 Route::get('/{id}/egreso', [EgresoController::class, 'registrada'])->name('egreso');
 

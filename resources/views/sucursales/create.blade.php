@@ -82,12 +82,12 @@
             </div>          
            
             <div class="col-md-12">
-              <label>Telefono</label>
+              <label>Teléfono (R.L.)</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
                 </div>
-                <input type="text" class="form-control" id="rep_telefono"  name="rep_telefono" maxlength="200"  value="{{ old('rep_telefono') }}" >
+                <input type="text" class="form-control" id="Rep_telefono"  name="Rep_telefono" maxlength="200"  value="{{ old('Rep_telefono') }}" >
               </div>
             </div>		
 
@@ -128,6 +128,7 @@
        <div class="card-body">
         <h5>B) DETALLE CASA MATRIZ Y SUCURSALES Y N° DE TRABAJADORES</h5>
         <div class="row">
+        <div class="col-md-12"><h6>Casa Matriz</h6></div>
          
             <div class="col-md-6">
               <label>Comuna</label>
@@ -159,8 +160,10 @@
               </div>
             </div>	
 
-
+<div class="col-md-12"><h6>Sucursales</h6></div>            
+            
             <div class="col-md-6">
+            <label>Comuna</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -169,7 +172,9 @@
               </div>
             </div>	
 
+            
             <div class="col-md-2">
+            <label>Rol</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
@@ -178,7 +183,9 @@
               </div>
             </div>	
 
+            
             <div class="col-md-2">
+            <label>trabajadores</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>

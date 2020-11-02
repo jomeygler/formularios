@@ -17,9 +17,11 @@
 <h5>B) TRÁMITE QUE REALIZARÁ</h5>
 <div class="row">
 
-<div class="col-md-9 rounded border border-dark Subraya">
-             <label><b>Tramite que Realiza</b></label>
-              <p>{{$Patente->nombretramite}}</p>
+            <div class="col-md-9 rounded border border-dark Subraya">
+            
+           <span> @if($Patente->tramite == "1") <p>Patente Nueva</p>@else
+             <p>Microempresa Familiar (solo por alcohol)</p>
+             @endif</span>
             </div>
          
 </div>
@@ -203,7 +205,10 @@ municipales)</h5>
 
       </div>
       </div>
-
+        
+<div style="text-align: center;">
+<img src="http://190.13.66.88/images/manzana.PNG" alt="">
+</div>
 <div>
 <br>
 <br>

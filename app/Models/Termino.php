@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Termino extends Model
 {
+    protected $fillable = ['*', 'nombre'];
     use HasFactory;
 }

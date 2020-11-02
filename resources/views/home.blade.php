@@ -74,7 +74,7 @@ a{
   <div class= "row">
       <div class = "dep" style = "background-color: #f8931f"></div>
         <div class="col-md-1 dep">
-          <img img src = "{{ asset('images/recurso4.png')}}" class="justify-content-end">
+          <img src = "{{ asset('images/recurso4.png')}}" class="justify-content-end">
         </div>      
         <div class="col-md-10 dep">
         <span><h5>Dirección de <b>Transito</b></h5></span>
@@ -87,7 +87,7 @@ a{
   <div class= "row">
      <div class = "dep" style = "background-color: #2e3192"></div>
         <div class="col-md-1 dep">
-         <img img src = "{{ asset('images/recurso3.png')}}" class="justify-content-end">
+         <img src = "{{ asset('images/recurso3.png')}}" class="justify-content-end">
         </div>        
         <div class="col-10 dep">
         <span><h5>Oficina de <b>Partes</b></h5></span>
@@ -100,7 +100,7 @@ a{
      <div class = "dep" style = "background-color: #d60b51"></div>
         <div class="col-md-1 dep">
          <!--<img img src = "../images/recurso2.png" class="justify-content-end">--> 
-		 <img img src = "{{ asset('images/recurso2.png') }}" class="justify-content-end">
+		 <img src = "{{ asset('images/recurso2.png') }}" class="justify-content-end">
         </div>        
         <div class="col-10 dep">
         <span><h5>Dirección de <b>Rentas</b></h5></span>
@@ -110,7 +110,7 @@ a{
          <a href="{{ route('inversiones.create') }}">CERTIFICADO DE INVERSIONES</a> 	 
          <!--<a href="../inversiones/create">CERTIFICADO DE INVERSIONES</a>--> 
          <span>|</span>     
-         <a href="{{ route('termino.create') }}"> SOLICITUD LEY 21.207</a> 				 
+         <a href="{{ route('termino.create') }}"> SOLICITUD DE TÉRMINO DE NEGOCIO</a> 				 
          <!--<a href="../termino/create">SOLICITUD DE TÉRMINO DE NEGOCIO</a> -->
          <span>|</span>
          <a href="{{ route('ley.create') }}"> SOLICITUD LEY 21.207</a> 		 
@@ -126,7 +126,7 @@ a{
      <div class = "dep" style = "background-color: #f15a24"></div>
         <div class="col-md-1 dep">
          <!--<img img src = "../images/recurso1.png" class="justify-content-end"> -->
-		 <img img src="{{ asset('images/recurso1.png') }}" class="justify-content-end">
+		 <img src="{{ asset('images/recurso1.png') }}" class="justify-content-end">
         </div>        
         <div class="col-10 dep">
         <span><h5>Unidad <b>Social</b></h5></span>
